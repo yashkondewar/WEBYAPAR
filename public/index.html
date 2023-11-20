@@ -1,0 +1,35 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Image Gallery</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Image Gallery</h1>
+
+    <!-- Image upload form -->
+    <form id="uploadForm" class="mb-4">
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="image" name="image" required>
+        <label class="custom-file-label" for="image">Choose Image</label>
+      </div>
+      <button type="submit" class="btn btn-primary mt-2">Upload</button>
+    </form>
+
+    <!-- Image gallery -->
+    <div id="imageGallery" class="d-flex flex-wrap">
+      <!-- Images will be displayed here -->
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
